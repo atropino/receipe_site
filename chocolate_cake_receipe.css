@@ -1,21 +1,49 @@
 body {
     background-color: #52583d;
     font-family: Arial;
+
 }
 
 * {
     overflow: auto;
 }
 
+p.category {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 0px 18px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+    /* margin-top: 0px; */
+
+}
+
+div.top_category {
+
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
 div.content {
     background-color: #ffffd4;
-    margin: 60px 10% 0px 10%;
-    padding: 30px;
-    padding-top: 0px;
-    min-width: 300px;
+    margin: 60px 8px 60px 8px;
+    padding-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* min-width: 300px; */
     /* overflow: auto; */
     box-shadow: 5px 5px 5px;
     overflow: visible;
+    max-height: min-content;
 
 }
 
@@ -25,6 +53,29 @@ h1 {
     margin-bottom: 10px;
 }
 
+div.line {
+    background-color: black;
+    height: 1px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.line2 {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .center {
+    text-align: center;
+    width: 100%;
+     margin-top: 0px; 
+
+} */
+
 p.description {
     text-align: center;
     max-width: 400px;
@@ -33,25 +84,16 @@ p.description {
     font-size: 14px;
 }
 
-.center {
-    text-align: center;
-    width: 100%;
+
+img.info {
+    display: block;
+    max: height 720px;
+    object-fit: cover;
+    min-height: 200px;
+    border-color: grey;
 
 }
 
-div.top_category {
-
-    margin-bottom: -15px;
-    margin-top: -10px;
-}
-
-div.line {
-    background-color: black;
-    height: 1px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 div.info {
     position: relative;
@@ -77,28 +119,12 @@ table.info th {
     padding-bottom: 8px;
 }
 
-img.info {
-    display: block;
-    max: height 400px;
-    object-fit: cover;
-    min-height: 200px;
-    border-color: grey;
 
-}
 
-p.category {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    margin-top: -15px;
-    margin-bottom: 0px;
-    padding: 6px 18px;
-    font-weight: bold;
-    font-size: 18px;
-}
+
 
 div.col {
-    width: 40%;
+    width: 100%;
 }
 
 div.col h2 {
@@ -110,17 +136,18 @@ div.col h2 {
 
 }
 
-div.col1 {
-    /* background-color: lightblue; */
+/* div.col1 {
+    background-color: lightblue;
     display: inline-block;
-    /* float: left; */
+    float: left;
 
-}
+} 
+*/
 
-div.col2 {
+/* div.col2 {
     float: right;
     display: inline-block;
-}
+} */
 
 div.ingridients p {
     border: 1px solid #6c829d;
@@ -134,6 +161,7 @@ div.ingridients p {
 table.przepis {
     /* background-color: aqua; */
     width: 100%;
+
 }
 
 table.przepis p.number {
@@ -148,6 +176,21 @@ table.przepis p.number {
     box-sizing: border-box;
     /* width: 100%; */
     border-radius: 50%;
+    margin: 0;
+}
+
+table.przepis p.krem {
+    background-color: #6c829d;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    /* width: 100%; */
+    border-radius: 10%;
     margin: 0;
 }
 
@@ -171,4 +214,32 @@ table.przepis td {
     /* background-color: #acceb5; */
     vertical-align: top;
     /* width: 10%; */
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+
+    /* -----   ------- */
+    div.content {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        width: 720px;
+    }
+
+    div.col {
+        width: 40%;
+    }
+
+    div.col1 {
+        display: inline-block;
+        float: left;
+
+    }
+
+    div.col2 {
+        float: right;
+        display: inline-block;
+    }
+
 }
